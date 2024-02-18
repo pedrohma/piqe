@@ -1,4 +1,5 @@
-﻿using piqe.Models.BaseEntity;
+﻿using System.Linq.Expressions;
+using piqe.Models;
 
 namespace piqe.Core
 {
