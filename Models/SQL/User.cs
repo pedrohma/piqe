@@ -10,8 +10,10 @@ namespace piqe.Models
         public UserAccessLevel AccessLevel { get; set; }
         public Guid? TeacherKey { get; set; }
         public Guid? StudentKey { get; set; }
+        public Guid? ParentKey { get; set; }
 
         public virtual Teacher Teacher { get; set; }
         public virtual Student Student { get; set; }
+        public virtual Parent Parent { get; set; }
     }
 }
