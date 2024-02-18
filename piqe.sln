@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{F4683DB3-7BA7-4E16-B715-E72EB24A4F64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{C3D1AC88-C265-42E3-A6C4-57D52290C6AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F4683DB3-7BA7-4E16-B715-E72EB24A4F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4683DB3-7BA7-4E16-B715-E72EB24A4F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4683DB3-7BA7-4E16-B715-E72EB24A4F64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D1AC88-C265-42E3-A6C4-57D52290C6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D1AC88-C265-42E3-A6C4-57D52290C6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D1AC88-C265-42E3-A6C4-57D52290C6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D1AC88-C265-42E3-A6C4-57D52290C6AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
