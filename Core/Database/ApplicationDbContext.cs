@@ -5,8 +5,10 @@ namespace piqe.Core
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            var connectionString = "server=localhost;database=piqe;user=root;password=Piqe2024!@#;";
+            optionsBuilder.UseMySQL(connectionString);
         }
 
         public DbSet<User> Users { get; set; }
@@ -15,9 +17,34 @@ namespace piqe.Core
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Attendence> Attendences { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-        }
+        // protected override void OnModelCreating(ModelBuilder builder)
+        // {
+        //     base.OnModelCreating(builder);
+
+        //     builder.Entity<User>(entity =>
+        //     {
+        //         entity.HasKey(e => e.Key);
+        //     });
+
+        //     builder.Entity<Student>(entity =>
+        //     {
+        //         entity.HasKey(e => e.Key);
+        //     });
+
+        //     builder.Entity<Teacher>(entity =>
+        //     {
+        //         entity.HasKey(e => e.Key);
+        //     });
+
+        //     builder.Entity<Grade>(entity =>
+        //     {
+        //         entity.HasKey(e => e.Key);
+        //     });
+
+        //     builder.Entity<Attendence>(entity =>
+        //     {
+        //         entity.HasKey(e => e.Key);
+        //     });
+        // }
     }
 }

@@ -7,6 +7,6 @@ namespace piqe.Models
         public string Duration { get; set; }
         public Guid TeacherKey { get; set; }
         public virtual Teacher Teacher { get; set; }
-        public virtual List<Student> Students { get; set; }
+        public virtual IList<Student> Students { get; set; }
     }
 }
