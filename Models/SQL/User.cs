@@ -11,6 +11,7 @@ namespace piqe.Models
         public Guid? TeacherKey { get; set; }
         public Guid? StudentKey { get; set; }
         public Guid? ParentKey { get; set; }
+        public DateTime Birthday {get;set;}
 
         public virtual Teacher Teacher { get; set; }
         public virtual Student Student { get; set; }

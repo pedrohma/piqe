@@ -11,40 +11,15 @@ namespace piqe.Core
             optionsBuilder.UseMySQL(connectionString);
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Attendence> Attendences { get; set; }
-
-        // protected override void OnModelCreating(ModelBuilder builder)
-        // {
-        //     base.OnModelCreating(builder);
-
-        //     builder.Entity<User>(entity =>
-        //     {
-        //         entity.HasKey(e => e.Key);
-        //     });
-
-        //     builder.Entity<Student>(entity =>
-        //     {
-        //         entity.HasKey(e => e.Key);
-        //     });
-
-        //     builder.Entity<Teacher>(entity =>
-        //     {
-        //         entity.HasKey(e => e.Key);
-        //     });
-
-        //     builder.Entity<Grade>(entity =>
-        //     {
-        //         entity.HasKey(e => e.Key);
-        //     });
-
-        //     builder.Entity<Attendence>(entity =>
-        //     {
-        //         entity.HasKey(e => e.Key);
-        //     });
-        // }
     }
 }

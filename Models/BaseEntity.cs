@@ -12,5 +12,10 @@ namespace piqe.Models
         public DateTime DateCreated { get; set; }
         public DateTime? DateUpdated { get; set; }
         public bool IsDeleted { get; set; } = false;
+
+        public BaseEntity(){
+            Key = Guid.NewGuid();
+            DateCreated = DateTime.UtcNow;
+        }
     }
 }
